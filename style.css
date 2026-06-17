@@ -9,6 +9,93 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 40px;
+}
+
+.logo {
+    height: 80px;
+}
+
+/* Right side (tagline + icons) */
+.right-header {
+    text-align: right;
+    max-width: 300px;
+}
+
+/* Tagline */
+.tagline {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/* ✅ Social icons under tagline */
+.social-top {
+    margin-top: 10px;
+}
+
+.social-top a {
+    margin-left: 15px;
+    font-size: 20px;
+    color: #044851;
+}
+
+.social-top a:hover {
+    color: #18b879;
+}
+
+/* Main */
+.main {
+    text-align: center;
+    margin-top: 100px;
+    padding: 0 20px;
+}
+
+.main h1 {
+    font-size: 50px;
+}
+
+.main p {
+    max-width: 600px;
+    margin: auto;
+    color: #333;
+}
+
+/* WhatsApp button */
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 25px;
+    border: 2px solid #18b879;
+    border-radius: 30px;
+    color: #18b879;
+    text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+    background-color: #18b879;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 14px;
+    color: black;
+}body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #044851;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 30px 40px;
 }
