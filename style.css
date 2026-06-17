@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #044851;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.logo {
+    height: 80px;
+}
+
+.tagline {
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+/* Main */
+.main {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.main h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.main p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 16px;
+    color: #333;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 30px;
+    border: 2px solid #18b879;
+    border-radius: 30px;
+    color: #18b879;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+    background-color: #18b879;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-size: 14px;
+}
