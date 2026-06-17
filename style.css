@@ -10,6 +10,94 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 30px 40px;
+}
+
+.logo {
+    height: 80px;
+}
+
+.tagline {
+    font-size: 14px;
+    letter-spacing: 2px;
+    max-width: 250px;
+    text-align: right;
+}
+
+/* Main */
+.main {
+    text-align: center;
+    margin-top: 100px;
+    padding: 0 20px;
+}
+
+.main h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.main p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 16px;
+    color: #333;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 25px;
+    border: 2px solid #18b879;
+    border-radius: 30px;
+    color: #18b879;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-btn i {
+    margin-right: 8px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #18b879;
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: black;
+}
+
+.footer .right a {
+    margin-left: 15px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.footer .right a:hover {
+    color: #18b879;
+}body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #044851;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 30px 50px;
 }
 
