@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 50px;
+    padding: 30px 60px;
 }
 
 .logo {
@@ -31,7 +31,6 @@ body {
 
 .main h1 {
     font-size: 50px;
-    margin-bottom: 20px;
 }
 
 .main p {
@@ -40,7 +39,7 @@ body {
     color: #333;
 }
 
-/* WhatsApp button */
+/* WhatsApp Button */
 .whatsapp-btn {
     display: inline-block;
     margin-top: 40px;
@@ -67,133 +66,52 @@ body {
     bottom: 0;
     width: 100%;
 
-    padding: 20px 60px; /* ✅ KEY FIX */
+    padding: 20px 60px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    box-sizing: border-box; /* ✅ IMPORTANT */
+}
+
+/* LEFT text */
+.footer .left {
     font-size: 14px;
     color: black;
 }
 
-/* Social icons */
+/* RIGHT icons FIXED POSITION */
 .footer .right {
-    margin-right: 20px; /* ✅ prevents edge sticking */
+    display: flex;
+    gap: 15px;
+
+    margin-right: 20px; /* ✅ push inside */
 }
 
-.footer .right a {
-    margin-left: 20px;
+/* ICON size */
+.footer .right i {
     font-size: 22px;
-    text-decoration: none;
 }
 
-/* Brand colors */
-.instagram {
-    color: #E1306C;
+/* ✅ INSTAGRAM GRADIENT (REAL LOOK) */
+.instagram i {
+    background: radial-gradient(circle at 30% 107%, 
+    #fdf497 0%, #fdf497 5%, 
+    #fd5949 45%, #d6249f 60%, 
+    #285AEB 90%);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.linkedin {
+/* ✅ LINKEDIN ORIGINAL BLUE */
+.linkedin i {
     color: #0077B5;
 }
 
 /* Hover */
 .footer .right a:hover i {
-    opacity: 0.7;
+    transform: scale(1.1);
 }
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #044851;
-}
-
-/* Header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 40px;
-}
-
-.logo {
-    height: 80px;
-}
-
-.tagline {
-    font-size: 14px;
-    letter-spacing: 2px;
-}
-
-/* Main */
-.main {
-    text-align: center;
-    margin-top: 100px;
-    padding: 0 20px;
-}
-
-.main h1 {
-    font-size: 50px;
-}
-
-.main p {
-    max-width: 600px;
-    margin: auto;
-    color: #333;
-}
-
-/* WhatsApp */
-.whatsapp-btn {
-    display: inline-block;
-    margin-top: 40px;
-    padding: 12px 25px;
-    border: 2px solid #18b879;
-    border-radius: 30px;
-    color: #18b879;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.whatsapp-btn i {
-    margin-right: 8px;
-}
-
-.whatsapp-btn:hover {
-    background-color: #18b879;
-    color: white;
-}
-
-/* Footer */
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 20px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: 14px;
-    color: black;
-}
-
-/* Social icons */
-.footer .right a {
-    margin-left: 15px;
-    font-size: 22px;
-    text-decoration: none;
-}
-
-/* ✅ Original colors */
-.instagram i {
-    color: #E1306C;   /* Instagram color */
-}
-
-.linkedin i {
-    color: #0077B5;   /* LinkedIn blue */
-}
-
-/* Hover effect */
-.footer .right a:hover i {
-    opacity: 0.7;
-}
+``
