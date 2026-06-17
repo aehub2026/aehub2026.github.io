@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coming Soon</title>
+
+<!-- WhatsApp icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+
+  /* colorful animated gradient */
+  background: linear-gradient(270deg, #4facfe, #43e97b, #fbc2eb);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* floating bubbles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  animation: float 12s infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-80px); }
+  100% { transform: translateY(0); }
+}
+
+.circle:nth-child(1) { width:120px; height:120px; top:10%; left:10%; }
+.circle:nth-child(2) { width:80px; height:80px; bottom:15%; left:15%; }
+.circle:nth-child(3) { width:140px; height:140px; top:60%; right:10%; }
+.circle:nth-child(4) { width:100px; height:100px; top:20%; right:20%; }
+
+/* container */
+.container {
+  max-width: 700px;
+  padding: 40px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* big coming soon */
+.badge {
+  background: #ff9800;
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+h1 {
+  font-size: 2.1rem;
+  margin-bottom: 15px;
+}
+
+/* description */
+.desc {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* whatsapp button */
+.whatsapp {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 14px 30px;
+  background: #25D366;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.whatsapp i {
+  margin-right: 8px;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+  background: #1ebe5d;
+}
+
+/* footer */
+.footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  h1 { font-size: 1.4rem; }
+  .badge { font-size: 1.5rem; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- animated shapes -->
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+
+<div class="container">
+
+<div class="badge">🚧 COMING SOON</div>
+
+<h1>
+CLEANER AND GREENER GENERAL MAINTENANCE - L.L.C - S.P.C
+</h1>
+
+<p class="desc">
+We are launching soon with professional cleaning and maintenance services across the UAE.
+</p>
+
+<!-- ✅ Working WhatsApp -->
+<a href="https://wa.me/97123099379" class="whatsapp" target="_blank">
+  <i class="fab fa-whatsapp"></i> Contact on WhatsApp
+</a>
+
+<p style="margin-top:15px;"><strong>📍 United Arab Emirates</strong></p>
+
+</div>
+
+<div class="footer">
+© 2026 Cleaner and Greener. All rights reserved.
+</div>
+
+</body>
+</html>
