@@ -5,14 +5,14 @@
     box-sizing: border-box;
 }
 
-/* FULL HEIGHT PAGE */
+/* FULL PAGE */
 html, body {
     height: 100%;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background: #f0f0f0;
     color: #044851;
 
     display: flex;
@@ -25,7 +25,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-    flex-wrap: wrap;
 }
 
 .logo {
@@ -33,11 +32,11 @@ body {
 }
 
 .tagline {
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 2px;
 }
 
-/* MAIN (center everything properly) */
+/* MAIN */
 .main {
     flex: 1;
 
@@ -50,13 +49,11 @@ body {
     padding: 0 20px;
 }
 
-/* TITLE */
 .main h1 {
     font-size: 70px;
     margin-bottom: 15px;
 }
 
-/* DESCRIPTION */
 .main p {
     max-width: 600px;
     margin-bottom: 15px;
@@ -68,23 +65,14 @@ body {
 .whatsapp-btn {
     display: inline-block;
     margin-top: 5px;
-
     padding: 12px 30px;
+
     border: 2px solid #18b879;
     border-radius: 30px;
 
     color: #18b879;
     text-decoration: none;
     font-weight: bold;
-}
-
-.whatsapp-btn i {
-    margin-right: 8px;
-}
-
-.whatsapp-btn:hover {
-    background-color: #18b879;
-    color: white;
 }
 
 /* FOOTER */
@@ -95,26 +83,32 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+
+    /* ✅ KEY FIX */
+    flex-wrap: nowrap; /* prevents dropping */
 }
 
-/* LEFT */
+/* LEFT SIDE */
 .footer .left {
     font-size: 14px;
     color: black;
 }
 
-/* RIGHT */
+/* RIGHT SIDE ICONS */
 .footer .right {
     display: flex;
     gap: 15px;
+
+    /* ✅ keep icons always right */
+    flex-shrink: 0;
 }
 
+/* ICON SIZE */
 .footer .right i {
     font-size: 28px;
 }
 
-/* INSTAGRAM STYLE */
+/* INSTAGRAM */
 .instagram i {
     background: radial-gradient(circle at 30% 107%, 
     #fdf497 0%, #fdf497 5%, 
@@ -129,9 +123,25 @@ body {
     color: #0077B5;
 }
 
-/* HOVER */
-.footer .right a:hover i {
-    transform: scale(1.1);
-}
+/* ✅ MOBILE FIX */
+@media (max-width: 768px) {
 
-/* ✅ MOBILE VERSION */
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .main h1 {
+        font-size: 36px;
+    }
+
+    /* ✅ allow stacking ONLY on small screens */
+    .footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
