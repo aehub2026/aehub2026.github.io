@@ -1,17 +1,30 @@
-body {
+/* RESET + BASE */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #044851;
+
+    display: flex;
+    flex-direction: column;
 }
 
-/* Header */
+/* HEADER */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
-    flex-wrap: wrap; /* ✅ allows stacking on mobile */
+    padding: 20px 60px;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -20,24 +33,30 @@ body {
 }
 
 .tagline {
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 2px;
 }
 
-/* Main */
+/* MAIN (important for footer fix) */
 .main {
+    flex: 1; /* ✅ pushes footer to bottom */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     text-align: center;
-    margin-top: 80px;
     padding: 0 20px;
 }
 
 .main h1 {
-    font-size: 60px;
+    font-size: 70px;
+    margin-bottom: 20px;
 }
 
 .main p {
     max-width: 600px;
-    margin: 20px auto;
+    margin: auto;
     color: #333;
     line-height: 1.6;
 }
@@ -45,7 +64,7 @@ body {
 /* WhatsApp Button */
 .whatsapp-btn {
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 40px;
     padding: 12px 25px;
     border: 2px solid #18b879;
     border-radius: 30px;
@@ -63,15 +82,15 @@ body {
     color: white;
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
     width: 100%;
-    padding: 20px 40px;
+    padding: 20px 60px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    box-sizing: border-box;
 }
 
 /* LEFT */
@@ -110,13 +129,14 @@ body {
     transform: scale(1.1);
 }
 
-/* ✅✅ MOBILE FIXES */
+/* ✅ MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 
     .header {
         flex-direction: column;
         text-align: center;
         gap: 10px;
+        padding: 20px;
     }
 
     .logo {
@@ -128,21 +148,17 @@ body {
     }
 
     .main h1 {
-        font-size: 36px; /* ✅ prevents overflow */
-    }
-
-    .main {
-        margin-top: 50px;
+        font-size: 36px;
     }
 
     .footer {
         flex-direction: column;
         text-align: center;
         gap: 15px;
+        padding: 20px;
     }
 
     .footer .right {
         justify-content: center;
     }
-
 }
