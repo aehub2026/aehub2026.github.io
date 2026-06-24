@@ -1,10 +1,11 @@
-/* RESET + BASE */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* FULL HEIGHT PAGE */
 html, body {
     height: 100%;
 }
@@ -29,7 +30,6 @@ body {
 
 .logo {
     height: 70px;
-    max-width: 100%;
 }
 
 .tagline {
@@ -37,37 +37,42 @@ body {
     letter-spacing: 2px;
 }
 
-/* MAIN (important for footer fix) */
+/* MAIN (center everything properly) */
 .main {
-    flex: 1; /* ✅ pushes footer to bottom */
+    flex: 1;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     text-align: center;
     padding: 0 20px;
 }
 
+/* TITLE */
 .main h1 {
     font-size: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
+/* DESCRIPTION */
 .main p {
     max-width: 600px;
-    margin: auto;
-    color: #333;
+    margin-bottom: 15px;
     line-height: 1.6;
+    color: #333;
 }
 
-/* WhatsApp Button */
+/* WHATSAPP BUTTON */
 .whatsapp-btn {
     display: inline-block;
-    margin-top: 40px;
-    padding: 12px 25px;
+    margin-top: 5px;
+
+    padding: 12px 30px;
     border: 2px solid #18b879;
     border-radius: 30px;
+
     color: #18b879;
     text-decoration: none;
     font-weight: bold;
@@ -109,7 +114,7 @@ body {
     font-size: 28px;
 }
 
-/* Instagram gradient */
+/* INSTAGRAM STYLE */
 .instagram i {
     background: radial-gradient(circle at 30% 107%, 
     #fdf497 0%, #fdf497 5%, 
@@ -119,46 +124,14 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-/* LinkedIn */
+/* LINKEDIN */
 .linkedin i {
     color: #0077B5;
 }
 
-/* Hover */
+/* HOVER */
 .footer .right a:hover i {
     transform: scale(1.1);
 }
 
-/* ✅ MOBILE RESPONSIVE */
-@media (max-width: 768px) {
-
-    .header {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-        padding: 20px;
-    }
-
-    .logo {
-        height: 60px;
-    }
-
-    .tagline {
-        font-size: 14px;
-    }
-
-    .main h1 {
-        font-size: 36px;
-    }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-        padding: 20px;
-    }
-
-    .footer .right {
-        justify-content: center;
-    }
-}
+/* ✅ MOBILE VERSION */
